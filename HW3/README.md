@@ -143,14 +143,14 @@ services:
 
 ![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-2.png)
 
-![image](https://github.com/Werest/DevOps/blob/!d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-3.png)
+![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-3.png)
 
-![image](https://github.com/Werest/DevOps/blob/!d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-4.png)
+![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-4.png)
 
-![image](https://github.com/Werest/DevOps/blob/!d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-5.png)
+![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-5.png)
 
-![image](https://github.com/Werest/DevOps/blob/!d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-6.png)
+![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-6.png)
 
-![image](https://github.com/Werest/DevOps/blob/!d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-7.png)
+![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-7.png)
 
 ![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-8.png)
