@@ -1,0 +1,13 @@
+include:
+  - docker-compose.yaml
+
+services:
+  portainer:
+    ports:
+      - "9000:9000/tcp"
+      - "9443:9443/tcp"
+    environment:
+      - TZ=Europe/Moscow
+    image: portainer/portainer-ce:latest
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
