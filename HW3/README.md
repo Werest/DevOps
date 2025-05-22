@@ -140,10 +140,17 @@ services:
 ***Ответ: Docker Compose обнаружил что есть котейнер, который оказался одним, хотя ранее был связан с другим. В данном случае portainer. Он видит, что он был создан из предыдущих манифестов, но в данный момент отсутствует.***
 
 ![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-1.png)
+
 ![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-2.png)
+
 ![image](https://github.com/Werest/DevOps/blob/!d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-3.png)
+
 ![image](https://github.com/Werest/DevOps/blob/!d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-4.png)
+
 ![image](https://github.com/Werest/DevOps/blob/!d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-5.png)
+
 ![image](https://github.com/Werest/DevOps/blob/!d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-6.png)
+
 ![image](https://github.com/Werest/DevOps/blob/!d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-7.png)
+
 ![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-8.png)
