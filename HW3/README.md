@@ -17,6 +17,8 @@ date +"%d-%m-%Y %T.%N %Z"; sleep 0.150; docker ps; ss -tlpn | grep 127.0.0.1:808
 
 curl -v http://127.0.0.1:8080/
 
+![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK2.png)
+
 # Задача 3
 1. docker attach custom-nginx-t2
 3. docker ps -a
@@ -61,9 +63,9 @@ docker rm -f custom-nginx-t2
 Флаг -f (force) удаляет работающий контейнер без предварительной остановки.
 
 ## Terminal:
-TASK3-1
-TASK3-2
-TASK3-3
+![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK3-1.png)
+![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK3-2.png)
+![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK3-3.png)
 
 # Задача 4
 1. Запустите первый контейнер из образа centos
@@ -83,7 +85,7 @@ docker exec -it debian_container cat /data/centos_file.txt
 docker exec -it debian_container cat /data/host_file.txt
 
 ## Terminal:
-Изображание НЕ ГОТОВО! TASK4
+![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK4.png)
 
 
 # Задача 5
@@ -137,3 +139,18 @@ services:
 
 ***Ответ: Docker Compose обнаружил что есть котейнер, который оказался одним, хотя ранее был связан с другим. В данном случае portainer. Он видит, что он был создан из предыдущих манифестов, но в данный момент отсутствует.***
 
+![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-1.png)
+
+![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-2.png)
+
+![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-3.png)
+
+![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-4.png)
+
+![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-5.png)
+
+![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-6.png)
+
+![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-7.png)
+
+![image](https://github.com/Werest/DevOps/blob/d058952af938052fa57e5de2feba03f9212258c4/HW3/TASK5-8.png)
