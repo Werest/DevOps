@@ -1,5 +1,8 @@
 ![task](https://github.com/Werest/DevOps/blob/4bcb891fabc45f7aa9e58b4b7c0ad8bb89440ee9/HW4/task1/task0.png)
 
+Ссылка на форк - https://github.com/Werest/shvirtd-example-python
+
+
 # Задача 1
 запустить mysql для приложения
 docker run -dit -p 3306:3306 -e MYSQL_ROOT_PASSWORD="YtReWq4321" -e MYSQL_DATABASE="virtd" -e MYSQL_USER="app" -e MYSQL_PASSWORD="QwErTy1234" --name db mysql
@@ -59,6 +62,7 @@ cursor.execute(create_table_query)
 ![\Werest\DevOps\HW4\task1\Задание 3 - 2.png](https://github.com/Werest/DevOps/blob/1691932e1532ba6b6c6d9d6e23dd7e486ad7065e/HW4/task1/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%203%20-%202.png)
 
 # Задача 4
+sh init.sh
 ![\Werest\DevOps\HW4\task1\Задание 4-1.png](https://github.com/Werest/DevOps/blob/1691932e1532ba6b6c6d9d6e23dd7e486ad7065e/HW4/task1/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%204-1.png)
 
 ![\Werest\DevOps\HW4\task1\Задача 4-2.png](https://github.com/Werest/DevOps/blob/1691932e1532ba6b6c6d9d6e23dd7e486ad7065e/HW4/task1/%D0%97%D0%B0%D0%B4%D0%B0%D1%87%D0%B0%204-2.png)
