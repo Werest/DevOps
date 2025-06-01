@@ -16,4 +16,4 @@ docker swarm init --advertise-addr IP-MANAGER
 docker swarm join --token _token_ IP-MANAGER:PORT
 
 docker node ls
-IMG
+![apt](https://github.com/Werest/DevOps/blob/4714ecfd42da596c3709f16bd67c6f73c8965318/HW5/2025-06-01%2010%2045%2032.png)
