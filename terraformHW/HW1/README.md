@@ -46,7 +46,8 @@ Ubuntu export TF_CLI_CONFIG_FILE=""
 3. "result": "4tjDPTID2JZC7ri5"
 ![img](https://github.com/Werest/DevOps/blob/a5d3858afbd9e4966e83140a5841b3e908a2d90f/terraformHW/HW1/2025-06-01%2012%2030%2041.png)
 4-5. 
-![img](https://github.com/Werest/DevOps/blob/a5d3858afbd9e4966e83140a5841b3e908a2d90f/terraformHW/HW1/2025-06-01%2012%2030%2041.png)
+![img](https://github.com/Werest/DevOps/blob/e6c32e4e8cd63ac95284aedc9ab5191b126474a1/terraformHW/HW1/4-1.png)
+
 - У ресурса docker_image отсутствует имя
 - В ресурсе docker_container некорректное обращение к random_password
 - Имя контейнера 1nginx недопустимо (не может начинаться с цифры).
@@ -66,9 +67,11 @@ resource "docker_container" "nginx" {
   }
 }
 ```
+![img](https://github.com/Werest/DevOps/blob/a5d3858afbd9e4966e83140a5841b3e908a2d90f/terraformHW/HW1/4-2.png)
 
 6.
-![img](https://github.com/Werest/DevOps/blob/a5d3858afbd9e4966e83140a5841b3e908a2d90f/terraformHW/HW1/4-2.png)
+![img](https://github.com/Werest/DevOps/blob/e6c32e4e8cd63ac95284aedc9ab5191b126474a1/terraformHW/HW1/6.png)
+
 ```
 resource "docker_image" "nginx"{
   name         = "nginx:latest"
