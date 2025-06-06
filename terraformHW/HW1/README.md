@@ -41,12 +41,12 @@ PowerShell $env:TF_CLI_CONFIG_FILE="F:/Devops/terraform_1.12.1_windows_amd64/.te
 Ubuntu export TF_CLI_CONFIG_FILE=""
 
 1. IMG Terraform --version 
-![img](https://github.com/Werest/DevOps/blob/main/terraformHW/HW1/2025-06-01%2011%2046%2038.png)
+![img](https://github.com/Werest/DevOps/blob/a5d3858afbd9e4966e83140a5841b3e908a2d90f/terraformHW/HW1/2025-06-01%2011%2046%2038.png)
 2. Секретную информацию можно сохранить в файле personal.auto.tfvars
 3. "result": "4tjDPTID2JZC7ri5"
-![img](https://github.com/Werest/DevOps/blob/main/terraformHW/HW1/2025-06-01%2012%2030%2041.png)
+![img](https://github.com/Werest/DevOps/blob/a5d3858afbd9e4966e83140a5841b3e908a2d90f/terraformHW/HW1/2025-06-01%2012%2030%2041.png)
 4-5. 
-![img](https://github.com/Werest/DevOps/blob/main/terraformHW/HW1/4-1.png)
+![img](https://github.com/Werest/DevOps/blob/a5d3858afbd9e4966e83140a5841b3e908a2d90f/terraformHW/HW1/2025-06-01%2012%2030%2041.png)
 - У ресурса docker_image отсутствует имя
 - В ресурсе docker_container некорректное обращение к random_password
 - Имя контейнера 1nginx недопустимо (не может начинаться с цифры).
@@ -68,7 +68,7 @@ resource "docker_container" "nginx" {
 ```
 
 6.
-![img](https://github.com/Werest/DevOps/blob/main/terraformHW/HW1/4-2.png)
+![img](https://github.com/Werest/DevOps/blob/a5d3858afbd9e4966e83140a5841b3e908a2d90f/terraformHW/HW1/4-2.png)
 ```
 resource "docker_image" "nginx"{
   name         = "nginx:latest"
@@ -226,6 +226,7 @@ output "mysql_credentials" {
   }
 }
 ```
+![img](https://github.com/Werest/DevOps/blob/a5d3858afbd9e4966e83140a5841b3e908a2d90f/terraformHW/HW1/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%202.png)
 
 ### Задание 3*
 1. Установите [opentofu](https://opentofu.org/)(fork terraform с лицензией Mozilla Public License, version 2.0) любой версии
@@ -235,4 +236,8 @@ output "mysql_credentials" {
 ```
 Could not resolve provider hashicorp/random: could not connect to registry.opentofu.org: failed to request discovery
 ```
+Нужно добавить     include = ["registry.terraform.io/*/*", "registry.opentofu.org/*/*"]
 
+![img](https://github.com/Werest/DevOps/blob/a5d3858afbd9e4966e83140a5841b3e908a2d90f/terraformHW/HW1/tofu-3.png)
+
+![img](https://github.com/Werest/DevOps/blob/a5d3858afbd9e4966e83140a5841b3e908a2d90f/terraformHW/HW1/tofu-3-1.p)
