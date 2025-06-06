@@ -243,4 +243,4 @@ Could not resolve provider hashicorp/random: could not connect to registry.opent
 
 ![img](https://github.com/Werest/DevOps/blob/a5d3858afbd9e4966e83140a5841b3e908a2d90f/terraformHW/HW1/tofu-3.png)
 
-![img](https://github.com/Werest/DevOps/blob/a5d3858afbd9e4966e83140a5841b3e908a2d90f/terraformHW/HW1/tofu-3-1.p)
+![img](https://github.com/Werest/DevOps/blob/a5d3858afbd9e4966e83140a5841b3e908a2d90f/terraformHW/HW1/tofu-3-1.png)
