@@ -46,14 +46,14 @@ yc resource-manager folder add-access-binding *** --role vpc.user --subject serv
 yc resource-manager folder add-access-binding *** --role vpc.admin --subject serviceAccount:***
 yc resource-manager folder add-access-binding *** --role compute.admin --subject serviceAccount:***
 ```
-![img](https://github.com/Werest/DevOps/blob/!393899780412bb2924029f36c86a2193bd38fb16/terraformHW/HW2/1-1.png)
-![img](https://github.com/Werest/DevOps/blob/!393899780412bb2924029f36c86a2193bd38fb16/terraformHW/HW2/1-2.png)
-![img](https://github.com/Werest/DevOps/blob/!393899780412bb2924029f36c86a2193bd38fb16/terraformHW/HW2/1-3.png)
-![img](https://github.com/Werest/DevOps/blob/!393899780412bb2924029f36c86a2193bd38fb16/terraformHW/HW2/1-4.png)
-![img](https://github.com/Werest/DevOps/blob/!393899780412bb2924029f36c86a2193bd38fb16/terraformHW/HW2/1-5_platform.png)
-![img](https://github.com/Werest/DevOps/blob/!393899780412bb2924029f36c86a2193bd38fb16/terraformHW/HW2/1-6.png)
-![img](https://github.com/Werest/DevOps/blob/!393899780412bb2924029f36c86a2193bd38fb16/terraformHW/HW2/1-7.png)
-![img](https://github.com/Werest/DevOps/blob/!393899780412bb2924029f36c86a2193bd38fb16/terraformHW/HW2/1-8.png)
+![img](https://github.com/Werest/DevOps/blob/393899780412bb2924029f36c86a2193bd38fb16/terraformHW/HW2/1-1.png)
+![img](https://github.com/Werest/DevOps/blob/393899780412bb2924029f36c86a2193bd38fb16/terraformHW/HW2/1-2.png)
+![img](https://github.com/Werest/DevOps/blob/393899780412bb2924029f36c86a2193bd38fb16/terraformHW/HW2/1-3.png)
+![img](https://github.com/Werest/DevOps/blob/393899780412bb2924029f36c86a2193bd38fb16/terraformHW/HW2/1-4.png)
+![img](https://github.com/Werest/DevOps/blob/393899780412bb2924029f36c86a2193bd38fb16/terraformHW/HW2/1-5_platform.png)
+![img](https://github.com/Werest/DevOps/blob/393899780412bb2924029f36c86a2193bd38fb16/terraformHW/HW2/1-6.png)
+![img](https://github.com/Werest/DevOps/blob/393899780412bb2924029f36c86a2193bd38fb16/terraformHW/HW2/1-7.png)
+![img](https://github.com/Werest/DevOps/blob/393899780412bb2924029f36c86a2193bd38fb16/terraformHW/HW2/1-8.png)
 ![img](https://github.com/Werest/DevOps/blob/393899780412bb2924029f36c86a2193bd38fb16/terraformHW/HW2/1-9.png)
 
 - Ответ : preemptible = true - это прерываемая ВМ (Экономия бюджета); core_fraction=5 (Минимальная доля vCPU - Оптимизация затрат)
