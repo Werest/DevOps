@@ -1,5 +1,6 @@
 # Задание 1
-img 1-1 1-2
+![\Werest\DevOps\terraformHW\HW3\1-1.png](https://github.com/Werest/DevOps/blob/690bfac9bdd4710eeeb41fbb3028b890d564cc19/terraformHW/HW3/1-1.png)
+![\Werest\DevOps\terraformHW\HW3\1-2.png](https://github.com/Werest/DevOps/blob/690bfac9bdd4710eeeb41fbb3028b890d564cc19/terraformHW/HW3/1-2.png)
 
 # Задание 2
 ### count-vm.tf
@@ -111,7 +112,7 @@ resource "yandex_compute_instance" "db" {
 }
 ```
 
-img 2-1
+![\Werest\DevOps\terraformHW\HW3\2-1.png](https://github.com/Werest/DevOps/blob/690bfac9bdd4710eeeb41fbb3028b890d564cc19/terraformHW/HW3/2-1.png)
 
 # Задание 3
 disk_vm.tf
@@ -158,7 +159,8 @@ resource "yandex_compute_instance" "storage" {
   }
 }
 ```
-img3-1 3-2
+![\Werest\DevOps\terraformHW\HW3\3-1.png](https://github.com/Werest/DevOps/blob/690bfac9bdd4710eeeb41fbb3028b890d564cc19/terraformHW/HW3/3-1.png)
+![\Werest\DevOps\terraformHW\HW3\3-2.png](https://github.com/Werest/DevOps/blob/690bfac9bdd4710eeeb41fbb3028b890d564cc19/terraformHW/HW3/3-2.png)
 
 # Задание 4
 ansible.tf
