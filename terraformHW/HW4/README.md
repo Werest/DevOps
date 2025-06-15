@@ -80,13 +80,18 @@ packages:
   - vim
   - nginx  
 ```
-img 1-1/1-5
+
+![\Werest\DevOps\terraformHW\HW4\1-1.png](https://github.com/Werest/DevOps/blob/e378ce867d411ad6365e390a3bce1c1d8eb2d13f/terraformHW/HW4/1-1.png)
+![\Werest\DevOps\terraformHW\HW4\1-2.png](https://github.com/Werest/DevOps/blob/e378ce867d411ad6365e390a3bce1c1d8eb2d13f/terraformHW/HW4/1-2.png)
+![\Werest\DevOps\terraformHW\HW4\1-3.png](https://github.com/Werest/DevOps/blob/e378ce867d411ad6365e390a3bce1c1d8eb2d13f/terraformHW/HW4/1-3.png)
+![\Werest\DevOps\terraformHW\HW4\1-4.png](https://github.com/Werest/DevOps/blob/e378ce867d411ad6365e390a3bce1c1d8eb2d13f/terraformHW/HW4/1-4.png)
+![\Werest\DevOps\terraformHW\HW4\1-5.png](https://github.com/Werest/DevOps/blob/e378ce867d411ad6365e390a3bce1c1d8eb2d13f/terraformHW/HW4/1-5.png)
 
 -------------------------------------------
 ### Задание 2
 
-VPC
-variables.tf
+## VPC
+## variables.tf
 ```
 variable "vpc_name" {
   type = string
@@ -104,7 +109,7 @@ variable "v4_cidr_blocks" {
 }
 ```
 
-main.tf
+## main.tf
 ```
 terraform {
   required_providers {
@@ -127,7 +132,7 @@ resource "yandex_vpc_subnet" "develop" {
 }
 ```
 
-root main.tf
+## root main.tf
 ```
 # resource "yandex_vpc_network" "develop" {
 #   name = var.vpc_name
@@ -245,6 +250,8 @@ No modules.
 | <a name="output_vpc_subnet"></a> [vpc\_subnet](#output\_vpc\_subnet) | subnet VPC |
 <!-- END_TF_DOCS -->
 
+![\Werest\DevOps\terraformHW\HW4\2-1.png](https://github.com/Werest/DevOps/blob/e378ce867d411ad6365e390a3bce1c1d8eb2d13f/terraformHW/HW4/2-1.png)
+
 -------------------------------------------
 ### Задание 3
 
@@ -256,4 +263,8 @@ terraform state list
 terraform state rm 
 terraform import module.analytics-vm.yandex_compute_instance.vm[0] id
 ```
-img 3-1 / 3-5
+![\Werest\DevOps\terraformHW\HW4\3-1.png](https://github.com/Werest/DevOps/blob/e378ce867d411ad6365e390a3bce1c1d8eb2d13f/terraformHW/HW4/3-1.png)
+![\Werest\DevOps\terraformHW\HW4\3-2.png](https://github.com/Werest/DevOps/blob/e378ce867d411ad6365e390a3bce1c1d8eb2d13f/terraformHW/HW4/3-2.png)
+![\Werest\DevOps\terraformHW\HW4\3-3.png](https://github.com/Werest/DevOps/blob/e378ce867d411ad6365e390a3bce1c1d8eb2d13f/terraformHW/HW4/3-3.png)
+![\Werest\DevOps\terraformHW\HW4\3-4.png](https://github.com/Werest/DevOps/blob/e378ce867d411ad6365e390a3bce1c1d8eb2d13f/terraformHW/HW4/3-4.png)
+![\Werest\DevOps\terraformHW\HW4\3-5.png](https://github.com/Werest/DevOps/blob/e378ce867d411ad6365e390a3bce1c1d8eb2d13f/terraformHW/HW4/3-5.png)
