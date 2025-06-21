@@ -51,6 +51,8 @@
 6. Принудительно разблокируйте state. Пришлите команду и вывод.
 
 ### Выполнение
+!Нужно ещe выдать права на vdb yandex сервисному аккаунту!
+
 ```
 terraform init -reconfigure
 terraform init -reconfigure -lock=false
