@@ -1,0 +1,47 @@
+#cloud-config
+package_update: true
+package_upgrade: true
+packages:
+  - curl
+  - python3-pip
+  - git
+  - jq
+
+users:
+  - name: ${username}
+    groups: [sudo, docker]
+    shell: /bin/bash
+    sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+    ssh_authorized_keys: 
+      - ${ssh_public_key}
+
+runcmd:
+  - curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+  - echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+  - apt-get update
+  - apt-get install -y docker-ce docker-ce-cli containerd.io
+  - pip3 install docker-compose
+  - systemctl enable docker
+  - systemctl start docker
+  - mkdir -p /opt/app
+  - chown ${username}:${username} /opt/app
+  # Установка YC CLI для работы с Container Registry
+  - curl -sSL https://storage.yandexcloud.net/yandexcloud-yc/install.sh | bash
+  - |
+    tee /opt/app/.env > /dev/null <<EOF
+    DB_USER=${db_user}
+    DB_PASSWORD=${db_password}
+    DB_NAME=${db_name}
+    DB_HOST=${mysql_host}
+    EOF
+  
+  - |
+    tee /opt/app/registry_id > /dev/null <<EOF
+    ${registry_id}
+    EOF
+  
+  - cd /opt/app
+  - git clone ${git_clone}
+  - chmod +x /opt/app/shvirtd-example-python/init.sh
+  - chown -R ${username}:${username} /opt/app/
+  - sudo -u ${username} /opt/app/shvirtd-example-python/init.sh
