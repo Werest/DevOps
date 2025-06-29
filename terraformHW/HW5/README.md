@@ -32,8 +32,10 @@
 
 ### Выполнение
 2. 
-img 1-1 / 1-2
-3. Есть переменные которые объявлены, но не используются в проекте. Проект не был инициализирован, т.к. не быт провайдера. В модулях test-vm и example-vm нет указания конкретной версии на ветке main, есть указане ссылки на ветку, а нужно чтобы ссылались модули на конкретный хеш коммит.
+![\Werest\DevOps\terraformHW\HW5\1-1.png](https://github.com/Werest/DevOps/blob/cd634010f82243b26e73449999023d6bc330a72d/terraformHW/HW5/1-1.png)
+![\Werest\DevOps\terraformHW\HW5\1-2.png](https://github.com/Werest/DevOps/blob/cd634010f82243b26e73449999023d6bc330a72d/terraformHW/HW5/1-2.png)
+
+3. Есть переменные которые объявлены, но не используются в проекте. Проект не был инициализирован, т.к. не было провайдера. В модулях test-vm и example-vm нет указания конкретной версии на ветке main, есть указание ссылки на ветку, а нужно чтобы ссылались модули на конкретный хеш коммит.
 - Идемпотентность - т.е. указав хеш, мы сможем развернуть инфраструктуру даже через год
 - Безопасность - исключение риска подмены кода в репозитории
 
@@ -49,11 +51,19 @@ img 1-1 / 1-2
 6. Принудительно разблокируйте state. Пришлите команду и вывод.
 
 ### Выполнение
+!Нужно ещe выдать права на vdb yandex сервисному аккаунту!
+
 ```
 terraform init -reconfigure
 terraform init -reconfigure -lock=false
 ```
-img 2-1 / 2-7
+![\Werest\DevOps\terraformHW\HW5\2-1.png](https://github.com/Werest/DevOps/blob/cd634010f82243b26e73449999023d6bc330a72d/terraformHW/HW5/2-1.png)
+![\Werest\DevOps\terraformHW\HW5\2-2.png](https://github.com/Werest/DevOps/blob/cd634010f82243b26e73449999023d6bc330a72d/terraformHW/HW5/2-2.png)
+![\Werest\DevOps\terraformHW\HW5\2-3.png](https://github.com/Werest/DevOps/blob/cd634010f82243b26e73449999023d6bc330a72d/terraformHW/HW5/2-3.png)
+![\Werest\DevOps\terraformHW\HW5\2-4.png](https://github.com/Werest/DevOps/blob/cd634010f82243b26e73449999023d6bc330a72d/terraformHW/HW5/2-4.png)
+![\Werest\DevOps\terraformHW\HW5\2-5.png](https://github.com/Werest/DevOps/blob/cd634010f82243b26e73449999023d6bc330a72d/terraformHW/HW5/2-5.png)
+![\Werest\DevOps\terraformHW\HW5\2-6.png](https://github.com/Werest/DevOps/blob/cd634010f82243b26e73449999023d6bc330a72d/terraformHW/HW5/2-6.png)
+![\Werest\DevOps\terraformHW\HW5\2-7.png](https://github.com/Werest/DevOps/blob/cd634010f82243b26e73449999023d6bc330a72d/terraformHW/HW5/2-7.png)
 
 ------
 ### Задание 3  
@@ -75,5 +85,7 @@ img 2-1 / 2-7
 - type=string, description="ip-адрес" — проверка, что значение переменной содержит верный IP-адрес с помощью функций cidrhost() или regex(). Тесты:  "192.168.0.1" и "1920.1680.0.1";
 - type=list(string), description="список ip-адресов" — проверка, что все адреса верны. Тесты:  ["192.168.0.1", "1.1.1.1", "127.0.0.1"] и ["192.168.0.1", "1.1.1.1", "1270.0.0.1"].
 
-img 4-1/4-2
+![\Werest\DevOps\terraformHW\HW5\4-1.png](https://github.com/Werest/DevOps/blob/cd634010f82243b26e73449999023d6bc330a72d/terraformHW/HW5/4-1.png)
+![\Werest\DevOps\terraformHW\HW5\4-2.png](https://github.com/Werest/DevOps/blob/cd634010f82243b26e73449999023d6bc330a72d/terraformHW/HW5/4-2.png)
+
 Файл - [Файл](variables_hw4.tf)
